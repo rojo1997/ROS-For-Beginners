@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Título: Primer nodo
+# Descripción: nodo que imprime el mismo mensaje indefinidamente.
+# Autor: Ernesto Martínez del Pino
 
 import rospy
 
@@ -12,5 +15,5 @@ if __name__ == "__main__":
     rate = rospy.Rate(10)
 
     while not rospy.is_shutdown():
-        rospy.loginfo("Hello")
+        rospy.loginfo("Hola")
         rate.sleep()
